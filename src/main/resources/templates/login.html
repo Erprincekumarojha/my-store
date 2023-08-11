@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login|Javaisawesome</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+        <div class="container">
+        <h2>Login Here</h2>
+        <form action="/welcome"  th:object="${loginRequest}"  method="post" >
+            <div class="imgcontainer">
+                <img src="https://logos.flamingtext.com/City-Logos/Jia-Logo.webp" alt="Logo">
+            </div>
+    
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" th:field="*{userId}" name="userId" required>
+    
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" th:field="*{password}" name="password" required>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <a href="/forgetPassword" class="">Forget password</a>
+
+            <button type="submit">Login</button>
+            <div>
+            <a href="#" class="google btn"><i class="fa-brands fa-google"></i>  Login With Google
+          </a>
+        </div>
+            <p>Don't have an account? <a href="/register">Sign up</a></p>
+ 
+  
+        </form>
+    </div> 
+</body>
+</html>

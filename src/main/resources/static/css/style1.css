@@ -1,0 +1,64 @@
+body {
+	background: linear-gradient(red, blue, yellow, green);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+		sans-serif;
+}
+
+.container {
+	margin: 80px auto;
+	width: 300px;
+	background-color: hsl(191, 65%, 90%);
+	padding: 40px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 15px blue;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	width: 100%;
+	padding: 15px 10px;
+	margin: 10px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+}
+
+button {
+	background-color: #200eed;
+	color: white;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border-radius: 20px;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	background-color: hsl(133, 93%, 47%);
+	box-shadow: #0810fb 1px 1px 16px;
+}
+
+img {
+	width: 40%;
+	border-radius: 50%;
+	margin-left: 90px;
+	box-shadow: 1px 1px 15px blue;
+}
+
+.sannu {
+	margin-left: 180px;
+}
+
+img.google {
+	width: 30px;
+	align-items: start;
+	margin-left: 20px;
+}
+
+li {
+	list-style: none;
+}
