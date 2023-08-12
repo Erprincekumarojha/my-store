@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RegistationPage|Javaisawesome</title>
+<link rel="stylesheet" href="/css/style1.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<h2>Register Here</h2>
+		<form action="/registerUser"  th:object="${user}"  method="post">
+			<div class="imgcontainer">
+				<img src="https://logos.flamingtext.com/City-Logos/Jia-Logo.webp"
+					alt="Logo">
+			</div>
+
+			<label for="firstname"><b>UserId</b></label> <input type="text"
+				placeholder="Enter your userId" th:field="*{userId}" name="userId" required>
+
+			<label for="middlename"><b>Full User Name</b></label> <input type="text"
+				placeholder="Enter full user name" th:field="*{username}" name="usernme"> 
+
+			<label for="email"><b>Email</b></label> <input type="email"
+				placeholder="Enter your email address" th:field="*{email}" name="email" required>
+
+			<br> <label for="psw"><b>Password</b></label> <input
+				type="password" placeholder="Enter Password" th:field="*{password}" name="password" required>
+			<label for="psw"><b>confirm password</b></label> <input
+				type="password" placeholder="confirm password" name="psw" required>
+				<label> <input type="checkbox" checked="checked"
+					name="remember"> Remember me
+			</label>
+
+
+				<button type="submit">Register</button>
+				<div></div>
+				<p>I have an account? <a
+						href="/login">Login
+						Here</a>
+				</p>
+		</form>
+	</div>
+</body>
+</html>

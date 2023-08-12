@@ -7,7 +7,7 @@
 		<version>3.0.6</version>
 		<relativePath />
 	</parent>
-	<groupId>com.javaisawesome</groupId>
+	<groupId>my-store</groupId>
 	<artifactId>my-store</artifactId>
 	<version>0.0.1</version>
 	<name>my-store</name>
