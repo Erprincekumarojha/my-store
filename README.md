@@ -1,5 +1,5 @@
 # My-store is a course selling project like an E-commerce website.
-Welcome to my store 
+Welcome to my store - Open source project in GitHub 
 --------------------------------
 We are using technology in this project
 1. Java
