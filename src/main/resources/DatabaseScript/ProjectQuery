@@ -8,6 +8,6 @@ CREATE TABLE `javaisawesome`.`USER` (
 	PRIMARY KEY (`userid`)
 );
   
-INSERT INTO 'javaisawesome'.'use' ('userid','username','eamil', 'password') VALUES ('prince','prince kumar','Pk@12345', '12345');
+INSERT INTO `javaisawesome`.`user` (`userid`,`username`,`email`, `password`) VALUES ('prince','prince kumar','Pk@12345', '12345');
   
   
