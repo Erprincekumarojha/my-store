@@ -1,6 +1,6 @@
-CREATE SCHEMA 'javaisawesome' ;
+CREATE SCHEMA if not exists 'javaisawesome' ;
 
-CREATE TABLE `javaisawesome`.`USER` (
+CREATE TABLE IF NOT EXISTS `javaisawesome`.`USER` (
 	`userid` VARCHAR(50) NOT NULL,
 	`username` VARCHAR(50) NOT NULL,
 	`email` VARCHAR(50) NOT NULL UNIQUE,
